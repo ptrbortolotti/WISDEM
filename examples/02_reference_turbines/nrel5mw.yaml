@@ -624,7 +624,7 @@ components:
         outer_shape:
             outer_diameter:
                 grid: &id002 [0.0, 0.167, 0.333, 0.5, 0.6667, 0.833, 1.0]
-                values: [6.0, 5.645, 5.29, 4.935, 4.58, 4.225, 3.87]
+                values: [6.0, 5.64429, 5.2971, 4.935, 4.579929, 4.22571, 3.87]
             cd:
                 grid: [0.0, 1.0]
                 values: [1.0, 1.0]
@@ -635,7 +635,7 @@ components:
                   material: steel
                   thickness:
                       grid: *id002
-                      values: [0.027, 0.0254, 0.0238, 0.0222, 0.0206, 0.019, 0.019]
+                      values: [0.0351, 0.033363, 0.031668, 0.0299, 0.028166, 0.026437, 0.0247]
         reference_axis:
             x:
                 grid: [0.0, 1.0]
@@ -645,7 +645,7 @@ components:
                 values: [0.0, 0.0]
             z:
                 grid: [0.0, 0.167, 0.333, 0.5, 0.6667, 0.833, 1.0]
-                values: [0.0, 14.6, 29.2, 43.8, 58.4, 73.0, 87.6974416]
+                values: [0.0, 14.6292, 29.1708, 43.8, 58.40292, 72.9708, 87.6]
     drivetrain:
         outer_shape:
             uptilt: 4.999629720311564
@@ -939,10 +939,10 @@ materials:
       roll_mass: 181.4368
       manufacturing_id: 3
    -  name: steel
-      description: Steel of the tower and monopile ASTM A572 Grade 50
+      description: Steel of the tower and monopile ASTM A572 Grade 50, density artificially increased from 7800 to 8500 kg/m3
       source: http://www.matweb.com/search/DataSheet.aspx?MatGUID=9ced5dc901c54bd1aef19403d0385d7f
       orth: 0
-      rho: 7800
+      rho: 8500
       alpha: 0.0
       E: 200000000000.0
       nu: 0.3
